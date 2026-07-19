@@ -69,7 +69,8 @@ public class RideService {
 
         return mapToResponse(savedRide);
     }
-
+// not used in controller but need when this is called by matching service to update the rideStatus to Accepted
+    // and assigns the driver id
     public void updateRideWithDriver(String rideId, String driverId){
         Ride ride = rideRepository.findById(rideId)
                 .orElseThrow(() -> new RuntimeException("Ride not found"));
