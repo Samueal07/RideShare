@@ -25,6 +25,7 @@ public class Ride {
     @Column(nullable = false)
     private String riderId;
 
+    // can be null as driver might not be assinged yet
     private String driverId;
 
     @Column(nullable = false)
